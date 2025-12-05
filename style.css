@@ -1,0 +1,113 @@
+:root {
+    --primary-color: #ff4757;
+    --secondary-color: #2f3542;
+    --text-color: #ffffff;
+    --font-family: 'Outfit', sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #dfe6e9; /* Light grey/blue background for sky/neutral feel */
+    font-family: var(--font-family);
+}
+
+#game-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#ui-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Let clicks pass through to canvas when playing */
+}
+
+#score-board, #arrows-left {
+    position: absolute;
+    top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#score-board {
+    left: 20px;
+}
+
+#arrows-left {
+    right: 20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(47, 53, 66, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    pointer-events: auto; /* Catch clicks on overlays */
+    transition: opacity 0.3s ease;
+}
+
+.overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.overlay h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.overlay h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.overlay p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 24px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 71, 87, 0.6);
+}
+
+button:active {
+    transform: scale(0.95);
+}

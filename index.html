@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mistrz Łucznictwa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ui-layer">
+        <div id="score-board">Wynik: <span id="score">0</span></div>
+        <div id="arrows-left">Strzały: <span id="arrow-count">10</span></div>
+        <div id="game-start" class="overlay active">
+            <h1>Mistrz Łucznictwa</h1>
+            <p>Kliknij i przeciągnij, aby naciągnąć łuk.<br>Puść, aby strzelić.</p>
+            <button id="start-btn">Graj</button>
+        </div>
+        <div id="game-over" class="overlay hidden">
+            <h2>Koniec Gry</h2>
+            <p> Twój wynik: <span id="final-score">0</span></p>
+            <button id="restart-btn">Zagraj Ponownie</button>
+        </div>
+    </div>
+    <canvas id="game-canvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
