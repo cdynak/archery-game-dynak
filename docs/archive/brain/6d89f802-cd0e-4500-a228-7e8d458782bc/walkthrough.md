@@ -1,0 +1,25 @@
+# Archery Game Verification
+
+## What was built
+- **Core Game Engine**: `script.js` handles the game loop, physics, and rendering.
+- **Bow & Arrow**: Mouse-controlled bow with drag-to-power mechanics.
+- **Target System**: Moving target with scoring rings (10, 30, 50, 100, 150 points).
+- **UI**: Start screen, score board, and game over screen.
+
+## How to Test
+1. **Open the Game**: Open `index.html` in your web browser.
+2. **Start**: Click "Graj" to begin.
+3. **Aim & Shoot**:
+    - Move your mouse to aim the bow.
+    - Click and drag the mouse *backwards* (or just hold and drag away) to power up.
+    - Release to shoot.
+    - *Note*: In the current logic, aiming is mouse position, power is drag distance. Try dragging around to see how it feels.
+4. **Scoring**: Try to hit the center yellow ring for 150 points.
+5. **Game Over**: Shoot all 10 arrows. The "Koniec Gry" screen should appear with your final score.
+6. **Restart**: Click "Zagraj Ponownie" to reset the game.
+
+## Known Limitations
+- Background is a simple gradient.
+- Physics is 2D and simplified (no wind).
+- Arrow gets "stuck" in the air visually upon hit (simplified stick mechanic).
+

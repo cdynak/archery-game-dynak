@@ -1,0 +1,20 @@
+# Archery Game Tasks
+
+- [ ] Project Setup
+    - [ ] Create `index.html`
+    - [ ] Create `style.css`
+    - [ ] Create `script.js`
+    - [ ] Create `assets` directory (if needed)
+- [ ] Game Mechanics Implementation
+    - [ ] Implement Bow control (aiming, draw strength)
+    - [ ] Implement Arrow physics (trajectory, gravity)
+    - [ ] Implement Target (hit detection, scoring rings)
+- [ ] Game Logic & UI
+    - [ ] Score tracking system
+    - [ ] Lives/Arrows count
+    - [ ] Game Over screen
+    - [ ] Restart functionality
+- [ ] Visuals & Polish
+    - [ ] Add animations (bow draw, arrow flight, target hit)
+    - [ ] Improve styling (modern, premium look)
+    - [ ] Add sound effects (optional)
